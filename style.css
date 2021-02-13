@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(46, 133, 139);
+    height: 70px;
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+}
+
+header img {
+    height: 150px;
+    cursor: pointer;
+}
+
+header .navi li {
+    list-style: none;
+}
+
+header .navi ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.mobileNav {
+    height: 10px;
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.mb-mr {
+    margin-right: 20px;
+}
+    
+.mobileNav .mbStp {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 8px;
+    display: block;
+   
+}
+
+header .navi ul {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+/* header .navi ul li a:hover {
+    color: gray;
+} */
+
+.banner  {
+    background: url(C:\Users\Lenovo\Desktop\testing\resNav\images\bgimg2.jpg);
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    z-index: -1;
+}
+
+.banner:before {
+    content: '';
+    background-image: linear-gradient(to right, rgb(0, 255, 191), rgb(255, 12, 105));
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .heroName  {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+.banner .heroDescription {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+
+.banner .hero {
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    /* background-color: lightgrey; */
+    background-image: url(C:\Users\Lenovo\Desktop\testing\resNav\images\bgimg.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+/* .content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: rebeccapurple;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.4;
+} */
+
+.content .rows {
+    width: 90%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.content .rows .box-1 {
+    width: 25%;
+}
+
+.content .rows .box-1 img {
+    height: 200px;
+    filter: grayscale(1);
+}
+
+.decText {
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    letter-spacing: 6px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.decText::before {
+    content: '';
+    bottom: 0px;
+    width: 73px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: rgb(64, 180, 189);
+    position: absolute;
+}
+
+.decText span {
+    color: rgb(64, 180, 189);
+    font-size: 50px;
+}
+
+.content .rows .box-2 p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.content .rows .box-2 {
+    background-color: gray;
+    padding: 20px;
+    position: relative;
+}
+
+.contect {
+    text-align: center;
+    /* height: 500px; */
+    width: 100%;
+    background-color: rgba(62, 255, 255, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.container {
+    width: 100%;
+    background-color: rgba(66, 66, 66, 0.541);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+    flex-direction: column;
+    padding: 10%;
+}
+
+.contect .container .forms {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 400px;
+}
+
+.forms input {
+    height: 50%;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 40px;
+    outline: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.forms textarea {
+    height: 200px;
+    text-transform: uppercase;
+    margin: 40px 0 40px 0;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.forms button {
+    height: 50%;
+    width: 100%;
+    outline: none;
+    background-color: cyan;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 10px 0 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.forms button:hover {
+    background-color: rgb(179, 212, 212);
+}
+
+/* Mobile */
+@media(max-width: 767px) {
+    body {
+        /* background-color: blueviolet; */
+        overflow: hidden;
+    }
+
+    header img {
+        height: 100px;
+    }
+
+    header .navi ul{
+        position: absolute;
+        top: 9%;
+        right: 0px;
+        height: 99vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(46, 133, 139);
+        transition: 0.5s ease-in;
+    }
+
+    header .navi {
+        display: none;
+    }
+
+    header .mobileNav {
+        right: 10px;
+    }
+
+    .banner .hero {
+        width: 50%;
+    }
+
+    .banner .heroName {
+        font-size: 19px;
+    }
+
+    .banner .heroDescription {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .content .rows .box-2 {
+        background-color: transparent;
+        margin-top: 10px;
+    }
+
+    .decText span {
+        /* color: rgb(64, 180, 189); */
+        font-size: 33px;
+    }
+
+    .decText {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .content .rows .box-2 p {
+        font-size: 15px;
+    }
+
+    .content .rows .box-2 {
+        margin-top: 10px;
+    }
+
+    .content .rows .box-1 img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .content .rows .box-1 {
+        width: 100%;
+    }
+
+    .content .rows {
+        flex-direction: column-reverse;
+    }
+
+    .contect .container .forms {
+        width: 110%;
+    }
+
+    .forms input {
+        font-size: 17px;
+    }
+
+    .forms textarea {
+        font-size: 17px;
+    }
+
+    .forms button {
+        height: 38%;
+        font-size: 17px;
+    }
+
+}
+
+/* Tablet */
+@media(min-width: 768px) {
+    /* body {
+        background-color: brown;
+    } */
+
+    header .navi ul {
+        width: 500px;
+    }
+    
+    header .navi {
+        display: block !important;
+    }
+
+    .mobileNav {
+        display: none;
+    }
+
+    /* .content {
+        padding: 20px 10%;
+    } */
+
+
+
+}
+
+/* SmallScreen */
+@media(min-width: 992px) {
+    /* body {
+        background-color: rgb(9, 255, 0);
+    } */
+
+    header .navi ul li a { 
+        font-size: 20px;
+    }
+
+}
+
+/* Desktop */
+@media(min-width: 1200px){
+    /* body {
+        background-color: red;
+    } */
+}

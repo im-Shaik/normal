@@ -1,0 +1,25 @@
+@keyframes colorChange {
+    0% {
+        color: #e3bd25;
+    }
+    20% {
+        color: #42c67a;
+    }
+    40% {
+        color: #d9493b;
+    }
+    60% {
+        color: #4389c0;
+    }
+    80% {
+        color: #2fb69c;
+    }
+    100% {
+        color: #42c67a;
+    }
+}
+
+.hN,
+header ul li a:hover {
+    animation: colorChange 10s infinite;
+}
